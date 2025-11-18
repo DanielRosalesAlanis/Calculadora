@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Validación</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div class="calculadora">
+            <input type="number" id="numero1" placeholder="Primer dígito" step="any">
+            <span class="error-message" id="numero1-error"></span>
+            
+            <input type="number" id="numero2" placeholder="Segundo dígito" step="any">
+            <span class="error-message" id="numero2-error"></span>
+
+            <div class="operaciones">
+                <button type="button" class="op-btn" data-op="+">+</button>
+                <button type="button" class="op-btn" data-op="-">-</button>
+                <button type="button" class="op-btn" data-op="*">*</button>
+                <button type="button" class="op-btn" data-op="/">/</button>
+            </div>
+
+            <button type="button" id="calcular">Calcular</button>
+
+            <div class="resultado" id="resultado"></div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
