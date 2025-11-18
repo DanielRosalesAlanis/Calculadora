@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculadora</h1>
+
+    <form id="calcForm">
+        <input type="number" id="a" placeholder="Primer número" required>
+        <input type="number" id="b" placeholder="Segundo número" required>
+
+        <select id="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+
+        <button type="submit" class="btn">Calcular</button>
+    </form>
+
+    <div id="respuesta" class="respuesta"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
